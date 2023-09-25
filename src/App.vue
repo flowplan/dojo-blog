@@ -2,6 +2,8 @@
   <nav>
     <router-link to="/">Home</router-link> | 
     <router-link :to="{name : 'computed'}">Computed Values</router-link>
+    <router-link :to="{name : 'props'}">Props Values</router-link>
+    <router-link :to="{name : 'fetch'}">Fetch Values</router-link>
   </nav>
   <router-view/>
 </template>
@@ -22,6 +24,7 @@ nav {
 nav a {
   font-weight: bold;
   color: #2c3e50;
+  margin: 5px;
 }
 
 nav a.router-link-exact-active {
